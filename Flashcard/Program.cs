@@ -71,10 +71,16 @@ while (flashAgain)
         Console.ReadKey();
     }
     Console.WriteLine("Slut på frågor... Vill du köra igen? (Y)");
-    string? resp = Console.ReadKey().ToString();
-    if(resp == "Y" || resp == "y" )
+    char? resp = Console.ReadKey().KeyChar;
+    if(resp == 'Y' || resp == 'y' )
     {
+        Console.WriteLine("");
         flashAgain = true;
+
+
+
+
+        Console.WriteLine("");
     }
     else
     {
